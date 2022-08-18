@@ -1,7 +1,7 @@
 {
   "name": "@maximkulkin/macropad",
   "type": "commonjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interface to Adafruit RP2040 MacroPad",
   "author": "Maxim Kulkin <maxim.kulkin@gmail.com>",
   "license": "MIT",
