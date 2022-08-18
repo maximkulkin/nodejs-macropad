@@ -1,6 +1,6 @@
 {
   "name": "@maximkulkin/macropad",
-  "type": "module",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "Interface to Adafruit RP2040 MacroPad",
   "author": "Maxim Kulkin <maxim.kulkin@gmail.com>",
@@ -15,7 +15,7 @@
   },
   "main": "dist/macropad.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**.ts --max-warnings=0",
     "build": "rimraf ./dist && tsc"
   },
   "keywords": [
@@ -23,6 +23,9 @@
     "usb"
   ],
   "dependencies": {
+    "@types/color": "^3.0.3",
+    "@types/node": "^16.10.9",
+    "color": "^3.0.3",
     "node-hid": "^2.1.1"
   },
   "devDependencies": {
