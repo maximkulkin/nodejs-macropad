@@ -197,7 +197,7 @@ export class MacroPad extends EventEmitter {
     const buttons = new Set<number>()
     for (let i=1; i < report.length; i++) {
       const button = report[i]
-      if (button <= 0 || button >= MACROPAD_KEY_COUNT)
+      if (button <= 0 || button > MACROPAD_KEY_COUNT)
         continue
 
       buttons.add(button)
